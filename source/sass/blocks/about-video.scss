@@ -1,0 +1,26 @@
+.about__video {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.about__video picture,
+.about__video img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+}
+
+.about__video iframe {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 0;
+}
+
+.about__video button {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 2;
+}
