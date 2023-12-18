@@ -12,4 +12,31 @@
   @include vp-767 {
     padding: 0 15px;
   }
+
+  .container__title {
+    position: relative;
+    margin: 0;
+    padding-top: 23px;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35px;
+
+    @include vp-767 {
+      padding: 35px 0 1px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      opacity: 0.03;
+      font-size: 55px;
+      line-height: 55px;
+      left: 0;
+      top: 6px;
+      overflow: hidden;
+    }
+  }
 }

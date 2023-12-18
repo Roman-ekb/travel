@@ -96,22 +96,22 @@
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="#">Туры</a>
+              <a class="header__link" href="#tours">Туры</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Обучение</a>
+              <a class="header__link" href="#training">Обучение</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">О нас</a>
+              <a class="header__link" href="#about">О нас</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Отзывы</a>
+              <a class="header__link" href="#reviews">Отзывы</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Фотографии</a>
+              <a class="header__link" href="#gallery">Фотографии</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Контакты</a>
+              <a class="header__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -276,13 +276,435 @@
       </section>
     </header>
     <main>
-      <section class="intro">
-        <div class="container">
+      <section class="tours" data-test="tours" id="tours">
+        <div class="tours__container container">
+          <div class="tours__swiper swiper">
+            <h2 class="tours__title container__title">Ближайшие туры</h2>
+            <div class="tours__swiper-wrapper swiper-wrapper">
+              <div class="tours__swiper-slide swiper-slide card-tour">
+                <div class="card-tour__background-img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/tours3-mobile.webp 1x, img/tours3-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/tours3-mobile.jpg 1x, img/tours3-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/tours3-tablet.webp 1x, img/tours3-tablet@2x.webp 2x">
+                    <source media="(max-width: 1199px)" srcset="img/tours3-tablet.jpg 1x, img/tours3-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/tours3-desktop.webp 1x, img/tours3-desktop@2x.webp 2x">
+                    <img src="tours3-desktop.jpg" srcset="img/tours3-desktop@2x.jpg 2x" width="380" height="416"
+                      alt="">
+                  </picture>
+                </div>
+                <h3 class="card-tour__title">Путешествие вокруг Эльбруса</h3>
+                <div class="card-tour__info-wrapper">
+                  <p class="card-tour__info card-tour__info--place">
+                    <svg class="card-tour__info-icon" viewBox="0 0 9 12" width="16" height="16">
+                      <use href="img/sprite.svg#pin_stroke" x="0" y="0"></use>
+                    </svg>
+                    <span class="card-tour__info-text">Кавказ</span>
+                  </p>
+                  <div class="card-tour__info card-tour__info--duration">
+                    <p class="card-tour__info card-tour__info--day">
+                      <svg class="card-tour__info-icon" viewBox="0 0 20 20" width="20" height="20">
+                        <use href="img/sprite.svg#sun" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">4 дня</span>
+                    </p>
+                    <p class="card-tour__info card-tour__info--night">
+                      <svg class="card-tour__info-icon" viewBox="0 0 16 16" width="16" height="16">
+                        <use href="img/sprite.svg#moon" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">3 ночи</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-tour__divider"></div>
+                <div class="card-tour__details-wrapper">
+                  <div class="card-tour__details card-tour__details--level">
+                    <p class="card-tour__details-caption">Сложность:</p>
+                    <p class="card-tour__details-text">
+                      <span class="card-tour__stars">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                      <span class="card-tour__marked-stars card-tour__marked-stars--3">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--date">
+                    <p class="card-tour__details-caption">Даты набора:</p>
+                    <p class="card-tour__details-text">12.06–19.06</p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--group">
+                    <p class="card-tour__details-caption">Группа:</p>
+                    <p class="card-tour__details-text">до 15 чел.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tours__swiper-slide swiper-slide card-tour">
+                <div class="card-tour__background-img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/tours1-mobile.webp 1x, img/tours1-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/tours1-mobile.jpg 1x, img/tours1-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/tours1-tablet.webp 1x, img/tours1-tablet@2x.webp 2x">
+                    <source media="(max-width: 1199px)" srcset="img/tours1-tablet.jpg 1x, img/tours1-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/tours1-desktop.webp 1x, img/tours1-desktop@2x.webp 2x">
+                    <img src="tours1-desktop.jpg" srcset="img/tours1-desktop@2x.jpg 2x" width="380" height="416"
+                      alt="">
+                  </picture>
+                </div>
+                <h3 class="card-tour__title">Путешествие вокруг&nbsp;Эльбруса</h3>
+                <div class="card-tour__info-wrapper">
+                  <p class="card-tour__info card-tour__info--place">
+                    <svg class="card-tour__info-icon" viewBox="0 0 9 12" width="16" height="16">
+                      <use href="img/sprite.svg#pin_stroke" x="0" y="0"></use>
+                    </svg>
+                    <span class="card-tour__info-text">Кавказ</span>
+                  </p>
+                  <div class="card-tour__info card-tour__info--duration">
+                    <p class="card-tour__info card-tour__info--day">
+                      <svg class="card-tour__info-icon" viewBox="0 0 20 20" width="20" height="20">
+                        <use href="img/sprite.svg#sun" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">4 дня</span>
+                    </p>
+                    <p class="card-tour__info card-tour__info--night">
+                      <svg class="card-tour__info-icon" viewBox="0 0 16 16" width="16" height="16">
+                        <use href="img/sprite.svg#moon" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">3 ночи</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-tour__divider"></div>
+                <div class="card-tour__details-wrapper">
+                  <div class="card-tour__details card-tour__details--level">
+                    <p class="card-tour__details-caption">Сложность:</p>
+                    <p class="card-tour__details-text">
+                      <span class="card-tour__stars">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                      <span class="card-tour__marked-stars card-tour__marked-stars--4">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--date">
+                    <p class="card-tour__details-caption">Даты набора:</p>
+                    <p class="card-tour__details-text">12.06–19.06</p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--group">
+                    <p class="card-tour__details-caption">Группа:</p>
+                    <p class="card-tour__details-text">до 15 чел.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tours__swiper-slide swiper-slide card-tour">
+                <div class="card-tour__background-img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/tours2-mobile.webp 1x, img/tours2-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/tours2-mobile.jpg 1x, img/tours2-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/tours2-tablet.webp 1x, img/tours2-tablet@2x.webp 2x">
+                    <source media="(max-width: 1199px)" srcset="img/tours2-tablet.jpg 1x, img/tours2-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/tours2-desktop.webp 1x, img/tours2-desktop@2x.webp 2x">
+                    <img src="tours2-desktop.jpg" srcset="img/tours2-desktop@2x.jpg 2x" width="380" height="416"
+                      alt="">
+                  </picture>
+                </div>
+                <h3 class="card-tour__title">Путь к подножию<br>Белухи</h3>
+                <div class="card-tour__info-wrapper">
+                  <p class="card-tour__info card-tour__info--place">
+                    <svg class="card-tour__info-icon" viewBox="0 0 9 12" width="16" height="16">
+                      <use href="img/sprite.svg#pin_stroke" x="0" y="0"></use>
+                    </svg>
+                    <span class="card-tour__info-text">Алтай</span>
+                  </p>
+                  <div class="card-tour__info card-tour__info--duration">
+                    <p class="card-tour__info card-tour__info--day">
+                      <svg class="card-tour__info-icon" viewBox="0 0 20 20" width="20" height="20">
+                        <use href="img/sprite.svg#sun" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">14 дней</span>
+                    </p>
+                    <p class="card-tour__info card-tour__info--night">
+                      <svg class="card-tour__info-icon" viewBox="0 0 16 16" width="16" height="16">
+                        <use href="img/sprite.svg#moon" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">13 ночей</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-tour__divider"></div>
+                <div class="card-tour__details-wrapper">
+                  <div class="card-tour__details card-tour__details--level">
+                    <p class="card-tour__details-caption">Сложность:</p>
+                    <p class="card-tour__details-text">
+                      <span class="card-tour__stars">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                      <span class="card-tour__marked-stars card-tour__marked-stars--3">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--date">
+                    <p class="card-tour__details-caption">Даты набора:</p>
+                    <p class="card-tour__details-text">14.06–23.06</p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--group">
+                    <p class="card-tour__details-caption">Группа:</p>
+                    <p class="card-tour__details-text">до 25 чел.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tours__swiper-slide swiper-slide card-tour">
+                <div class="card-tour__background-img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/tours3-mobile.webp 1x, img/tours3-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/tours3-mobile.jpg 1x, img/tours3-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/tours3-tablet.webp 1x, img/tours3-tablet@2x.webp 2x">
+                    <source media="(max-width: 1199px)" srcset="img/tours3-tablet.jpg 1x, img/tours3-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/tours3-desktop.webp 1x, img/tours3-desktop@2x.webp 2x">
+                    <img src="tours3-desktop.jpg" srcset="img/tours3-desktop@2x.jpg 2x" width="380" height="416"
+                      alt="">
+                  </picture>
+                </div>
+                <h3 class="card-tour__title">Через Фишт<br>к Чёрному морю<br>и обратно</h3>
+                <div class="card-tour__info-wrapper">
+                  <p class="card-tour__info card-tour__info--place">
+                    <svg class="card-tour__info-icon" viewBox="0 0 9 12" width="16" height="16">
+                      <use href="img/sprite.svg#pin_stroke" x="0" y="0"></use>
+                    </svg>
+                    <span class="card-tour__info-text">Адыгея</span>
+                  </p>
+                  <div class="card-tour__info card-tour__info--duration">
+                    <p class="card-tour__info card-tour__info--day">
+                      <svg class="card-tour__info-icon" viewBox="0 0 20 20" width="20" height="20">
+                        <use href="img/sprite.svg#sun" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">7 дней</span>
+                    </p>
+                    <p class="card-tour__info card-tour__info--night">
+                      <svg class="card-tour__info-icon" viewBox="0 0 16 16" width="16" height="16">
+                        <use href="img/sprite.svg#moon" x="0" y="0"></use>
+                      </svg>
+                      <span class="card-tour__info-text">6 ночей</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-tour__divider"></div>
+                <div class="card-tour__details-wrapper">
+                  <div class="card-tour__details card-tour__details--level">
+                    <p class="card-tour__details-caption">Сложность:</p>
+                    <p class="card-tour__details-text">
+                      <span class="card-tour__stars">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                      <span class="card-tour__marked-stars card-tour__marked-stars--4">
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                          <svg class="card-tour__star-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use href="img/sprite.svg#star-marked" x="0" y="0"></use>
+                          </svg>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--date">
+                    <p class="card-tour__details-caption">Даты набора:</p>
+                    <p class="card-tour__details-text">15.07–19.07</p>
+                  </div>
+                  <div class="card-tour__details card-tour__details--group">
+                    <p class="card-tour__details-caption">Группа:</p>
+                    <p class="card-tour__details-text">до 22 чел.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="tours__swiper-button-prev swiper-button-prev btn-slider btn-slider--prev" type="button">
+              <svg class="btn-slider__icon" viewBox="0 0 14 9" width="14" height="9">
+                <use href="img/sprite.svg#arrow-btn" x="0" y="0"></use>
+              </svg>
+            </button>
+            <button class="tours__swiper-button-next swiper-button-next btn-slider btn-slider--next" type="button">
+              <svg class="btn-slider__icon" viewBox="0 0 14 9" width="14" height="9">
+                <use href="img/sprite.svg#arrow-btn" x="0" y="0"></use>
+              </svg>
+            </button>
+          </div>
+          <a class="tours__link" href="#">
+            <span class="tours__link-text">ПОКАЗАТЬ ВСЕ ТУРЫ</span>
+            <svg viewBox="0 0 9 14" width="9" height="14">
+              <use href="img/sprite.svg#arrow-right" x="0" y="0"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="tours__background-img">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/clouds1-mobile.webp 1x, img/clouds1-mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/clouds1-mobile.png 1x, img/clouds1-mobile@2x.png 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/clouds1-tablet.webp 1x, img/clouds1-tablet@2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="img/clouds1-tablet.png 1x, img/clouds1-tablet@2x.png 2x">
+            <source type="image/webp" srcset="img/clouds1-desktop.webp 1x, img/clouds1-desktop@2x.webp 2x">
+            <img src="clouds1-desktop.png" srcset="img/clouds1-desktop@2x.png 2x" width="602" height="1630"
+              alt="">
+          </picture>
+        </div>
+      </section>
+      <section class="training" data-test="training" id="training">
+        <div class="training__container container">
+          <h2 class="training__title container__title">Обучение</h2>
+        </div>
+      </section>
+      <section class="about" data-test="about" id="about">
+        <div class="about__container container">
+          <h2 class="about__title container__title">О нас</h2>
+        </div>
+      </section>
+      <section class="reviews" data-test="reviews" id="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title container__title">Отзывы</h2>
+        </div>
+      </section>
+      <section class="advantages" data-test="adv" id="advantages">
+        <div class="advantages__container container">
+          <h2 class="advantages__title container__title">Преимущества</h2>
+        </div>
+      </section>
+      <section class="gallery" data-test="gallery" id="gallery">
+        <div class="gallery__container container">
+          <h2 class="gallery__title container__title">Фотогалерея</h2>
+        </div>
+      </section>
+      <section class="form" data-test="form" id="form">
+        <div class="form__container container">
+          <h2 class="visually-hidden">Заявка на консультацию</h2>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer" data-test="footer">
+      <div class="footer__container container">
+        <section class="footer__contacts contacts" id="contacts">
+          <div class="contacts__container container">
+            <h2 class="contacts__title container__title">Контакты</h2>
+          </div>
+        </section>
+      </div>
     </footer>
   </div>
   <script src="js/vendor.min.js"></script>

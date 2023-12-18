@@ -1,8 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/header/burger';
-import {sliderHero} from './modules/hero/slider';
+import {sliderHero} from './modules/hero/slider-hero';
 import {playVideo} from './modules/hero/play-video';
+import {sliderTours} from './modules/tours/slider-tours';
 
 // ---------------------------------
 
